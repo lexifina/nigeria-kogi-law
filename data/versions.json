@@ -1,0 +1,19 @@
+{
+ "country": "NG-KO",
+ "acts": [
+  {
+   "slug": "revenue-administration-law-2024",
+   "short": "Revenue Administration Law 2024",
+   "title": "Kogi State Revenue Administration Law, 2024",
+   "url": "https://kogistate.gov.ng/wp-content/uploads/KOGI-STATE-REVENUE-ADMINSTRATION-LAW-2024-.pdf",
+   "versions": [
+    {
+     "from": "2024-01-24",
+     "units": 101,
+     "source_url": "https://kogistate.gov.ng/wp-content/uploads/KOGI-STATE-REVENUE-ADMINSTRATION-LAW-2024-.pdf",
+     "sha256": "7c1dde5cdb54bb87ac85ab88bcf2ce0150787ea265d52100e368da12c982874c"
+    }
+   ]
+  }
+ ]
+}

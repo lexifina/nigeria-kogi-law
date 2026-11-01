@@ -1,0 +1,8 @@
+{
+  "path": "ng-ko",
+  "code": "NG-KO",
+  "name": "Kogi State",
+  "level": "country",
+  "repo": "https://github.com/lexifina/nigeria-kogi-law",
+  "build": "built: Laws of Kogi State as enacted, from the copies published by the Kogi State Government"
+}
