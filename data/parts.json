@@ -1,0 +1,11 @@
+{
+ "parts": {
+  "10-laws-01.json": {
+   "acts": [
+    "revenue-administration-law-2024"
+   ],
+   "sha256": "9c003aae9675bb7d491479d5a1a68073998179a74c65ce6b863e1bdf3b227d4e"
+  }
+ },
+ "schema": 1
+}
