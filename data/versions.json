@@ -14,6 +14,20 @@
      "sha256": "7c1dde5cdb54bb87ac85ab88bcf2ce0150787ea265d52100e368da12c982874c"
     }
    ]
+  },
+  {
+   "slug": "executive-order-no-3-2025-haulage-fees",
+   "short": "Executive Order No. 3 of 2025",
+   "title": "Executive Order on the Removal and Prohibition of Haulage Fees, Levies, and Multiple Charges on the Movement of Goods within, into, and through Kogi State",
+   "url": "https://kogistate.gov.ng/wp-content/uploads/KOGI-STATE-EXECUTIVEORDER-NO-3-2025-GAZETTED.pdf",
+   "versions": [
+    {
+     "from": "2025-12-12",
+     "units": 1,
+     "source_url": "https://kogistate.gov.ng/wp-content/uploads/KOGI-STATE-EXECUTIVEORDER-NO-3-2025-GAZETTED.pdf",
+     "sha256": "d647edde0502dce773411813dbe7304e1834366413a3becff71d4e0819c370ab"
+    }
+   ]
   }
  ]
 }

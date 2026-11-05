@@ -1,47 +1,18 @@
-# Kogi State: law history in git
+# Kogi State: legislation in git
 
-The Laws of Kogi State (Nigeria) as a git history: one file per section, one paragraph per line, so `git blame`, `git log` and `git diff` work line by line. The text is the English text of the Laws as enacted.
+This record holds official English legislative texts published by the Kogi State Government. It follows the design of [lexifina/global-law](https://github.com/lexifina/global-law).
 
-It follows the shared design of [lexifina/global-law](https://github.com/lexifina/global-law).
+| Act folder | Text and scope | In force |
+| --- | --- | --- |
+| `revenue-administration-law-2024/` | Revenue Administration Law 2024, as enacted, sections 1-99. Section 100 and its schedule are not yet included. | 2024-01-24 |
+| `executive-order-no-3-2025-haulage-fees/` | Executive Order No. 3 of 2025: current source text, oldest version available. Single file containing the gazette notice, recitals, all eight clauses and execution text. | 2025-12-12 |
 
-## What this repository holds
+The Government's [Bills & Laws page](https://kogistate.gov.ng/bills-laws-odc/) lists laws, regulations, orders and proposed bills. This record covers only the instruments above. Later amendments are not reconstructed. The revenue-law schedule remains a material completeness gap. Other listed instruments still require verification; bills and annual appropriation instruments are outside this record.
 
-**A first build: Laws as enacted.** The Kogi State Government publishes a small number of Laws as PDFs. Each Law here is one commit holding its text as enacted, dated by its commencement and credited to the Law itself. Amendments made since are not yet in this record.
+Dates come from each instrument's own commencement provision and dated official publication. Executive Order No. 3 takes effect immediately and was issued and gazetted on 12 December 2025. Each version records its official source URL and PDF SHA-256. Legal spelling and punctuation remain as published.
 
-| Folder | What |
-| --- | --- |
-| one folder per Law (e.g. `revenue-administration-law-2024/`) | the Law as enacted: `000-title.md`, one file per section, then any schedules |
+The revenue law is organized by section. The executive order is a complete single-file act. Its current-text version is credited to the publisher as the oldest version available; that label does not assert a reconstructed amendment history.
 
-The Laws are added in parts as each is verified. Only PDFs with a text layer are used; scanned copies (pictures of pages) are left out, as are Bills and appropriation (budget) Laws.
+The Government's copies are the sources used here; the Kogi State of Nigeria Gazette is authoritative. The executive order has no normative images; its logo and signature are decorative.
 
-Known gaps in the source: The Revenue Administration Law 2024 is here without its section 100, the Schedule of taxes, levies, fees and rates: its tables read in different orders in two PDF readers, so it cannot yet be checked letter by letter.
-
-## Source
-
-[Kogi State Government](https://kogistate.gov.ng/bills-laws-odc/): PDFs of the Laws. Each PDF's sha256 is recorded with its version in `data/versions.json`.
-
-## Dates
-
-Each Law is dated by the day it came into force under its own commencement provision, at noon in Lagos time (West Africa Time, UTC+1).
-
-## How it is built
-
-Lexifina reads the sources listed here and records each act's dated versions, and the laws that made each change, in one corpus file. `tools/build.py` writes this repository from that file, and the same corpus always gives the same commit hashes; `REPRODUCE.md` gives the details and the checks. A model (Claude) wrote Lexifina's code; it wrote no legal text, and no model runs when the history is built.
-
-The text layer of each PDF (no OCR) is read with the position of every line: running heads, page numbers and margin notes are set apart by their place on the page, and each section's margin note stands as the first line of its file. Lines wrapped by the printer are joined, so each paragraph is one line. Typing errors stay as printed.
-
-## How it is checked
-
-Every version is read back from git on the day it took effect and must match the corpus. A second, independent reading of every PDF (a different PDF engine) must contain every letter and digit of each Law in the same order, with nothing in the body left out (only page furniture and margin notes may lie between). Results are in `REPRODUCE.md`.
-
-## What "author" means
-
-The author of each commit is the Law that made the change, with an e-mail address that cannot exist; the committer is always Lexifina.
-
-## Limits
-
-Only the Laws listed above, as enacted; later amendments are not applied. The Government's PDFs are not the authoritative text; the Kogi State of Nigeria Gazette is.
-
-## Licence
-
-See [LICENSE](LICENSE): official texts of a legislative nature are not eligible for copyright in Nigeria (Copyright Act, 2022, s. 3(b)). Source: Kogi State Government.
+Official legislative texts are excluded from copyright by Nigeria's Copyright Act 2022, section 3(b). See [LICENSE](LICENSE).

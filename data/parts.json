@@ -5,6 +5,12 @@
     "revenue-administration-law-2024"
    ],
    "sha256": "9c003aae9675bb7d491479d5a1a68073998179a74c65ce6b863e1bdf3b227d4e"
+  },
+  "20-q287-executive-order-2025.json": {
+   "acts": [
+    "executive-order-no-3-2025-haulage-fees"
+   ],
+   "sha256": "90d7388c5a66ebe80826119ec01d108e59dcb2a1684f94f54b86cb5283ea88f5"
   }
  },
  "schema": 1
