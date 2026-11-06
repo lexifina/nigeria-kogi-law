@@ -1,5 +1,7 @@
 # Kogi State: legislation in git
 
+Part of [lexifina/global-law](https://github.com/lexifina/global-law), one git history for every country's law: this is the law of Kogi State, Nigeria, which global-law reads at `nigeria/kogi/acts/`.
+
 This record holds official English legislative texts published by the Kogi State Government. It follows the design of [lexifina/global-law](https://github.com/lexifina/global-law).
 
 | Act folder | Text and scope | In force |
